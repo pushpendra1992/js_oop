@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #CEE3EE;
+}
+
+#root {
+    max-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 1.5rem;
+    color: #031F4A;
+}
+
+.quiz h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #031F4A;
+}
+
+.question {
+    padding: 0rem;
+    margin: 0.6rem;
+    color: #003152;
+}
+
+.question>p {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin: 1.2rem;
+}
+
+.options {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.option {
+    width: 46%;
+    height: 80px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    align-self: center;
+    line-height: 6;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    background-color: #004E6F;
+    border-radius: 5px;
+    font-weight: 500;
+    margin: 1rem 3rem;
+    font-size: 1rem;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.correct {
+    color: green;
+    font-weight: bold;
+}
+
+.incorrect {
+    color: red;
+}
